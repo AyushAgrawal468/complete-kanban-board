@@ -57,8 +57,6 @@ export class HomepageNavigationComponent implements OnInit
     this.services.getSpaceByEmail().subscribe(data => {
       this.spaces = data;
       console.log(this.spaces);
-      
-
     },
       error => {
         console.log(error);
